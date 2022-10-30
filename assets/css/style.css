@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
 }
 body{
   --main-color: #88ABFF;
@@ -11,8 +11,9 @@ body{
   background: var(--main-color);
 }
 ::selection{
-  color: #fff;
-  background: #618cf8;
+  color: #fffc;
+  --main-color: #999;
+  background: var(--main-color);
 }
 .wrapper{
   margin: 50px;
