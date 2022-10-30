@@ -1,115 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Notes App in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/Normalize.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Notes App</title>
-</head>
-<body>
-    <main>
-        <div>
-            <i class='bx bx-plus'></i>
-            <p>Add new note</a>
-        </div>
-
-        <dialog>
-            <div>
-                <div>
-                    <div><h3>Add a new note</h3><i class='bx bx-x' ></i></div>
-                </div>
-                <form>
-                    <label for="Title">Title</label>
-                    <input type="text" name="Title" id="Title">
-                    <label for="description">Description</label>
-                    <textarea name="description" id="description"></textarea>
-                    <button type="button">Valid</button>
-                </form>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  </head>
+  <body>
+    <div class="popup-box">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p></p>
+            <i class="uil uil-times"></i>
+          </header>
+          <form action="#">
+            <div class="row title">
+              <label>Title</label>
+              <input type="text" spellcheck="false">
             </div>
-        </dialog>
-        
-        <div>
-            <h3>Helo World</h3>
-            <p>Implore chamber it on darkness that yore the he, 
-                implore hath above one quoth seraphim he gileadtell, 
-                i uttered and what tapping. The and you whom some</p>
-                <div>
-                    <p>2 april 15:35</p>
-                    <div>
-                        <p><i class='bx bx-pencil' ></i> Edit</p>
-                        <p><i class='bx bx-trash-alt' ></i> Delete</p>
-                    </div>
-                    <i class='bx bx-dots-horizontal-rounded'></i>
-                </div>
-        </div>
-        
-        <div>
-            <h3>Helo World</h3>
-            <p>Implore chamber it on darkness that yore the he, 
-            implore hath above one quoth seraphim he gileadtell, 
-            i uttered and what tapping. The and you whom some i token
-            Plutonian ghost nothing of tinkled still Implore chamber 
-            it on darkness that yore the he, implore hath a bove one 
-            quoth seraphim he gileadtell, i uttered and what tapping. 
-            The and you whom some i token Implore chamber it on 
-            darkness that yore the he, implore hath above one quoth 
-            seraphim he gileadtell, i uttered and what tapping. The 
-            and you whom some i token</p>
-            <div>
-                <p>2 april 15:35</p>
-                <div>
-                    <p><i class='bx bx-pencil' ></i> Edit</p>
-                    <p><i class='bx bx-trash-alt' ></i> Delete</p>
-                </div>
-                <i class='bx bx-dots-horizontal-rounded'></i>
+            <div class="row description">
+              <label>Description</label>
+              <textarea spellcheck="false"></textarea>
             </div>
+            <button></button>
+          </form>
         </div>
-    </main>
-</body>
-<script src="./assets/js/script.js"></script>
+      </div>
+    </div>
+    <div class="wrapper">
+      <li class="add-box">
+        <div class="icon"><i class="uil uil-plus"></i></div>
+        <p>Add new note</p>
+      </li>
+    </div>
 
-    <!-- close modal -->
-
-<script>
-
-    function validModal() {
-        document.querySelector('dialog').classList.add("modalClose")
-        console.log(document.querySelector('input').value)
-        console.log(document.querySelector('textarea').value)
-        document.querySelector("body").addEventListener("animationend", () =>{
-            document.querySelector('form').reset()
-            document.querySelector('dialog').close()
-        document.querySelector('dialog').classList.remove("modalClose")
-        }, {once:true})
-    } ;
-
-    function notValidModal() {
-        document.querySelector('dialog').classList.add("modalClose")
-        document.querySelector("body").addEventListener("animationend", () =>{
-            document.querySelector('dialog').close()
-        document.querySelector('dialog').classList.remove("modalClose")
-        }, {once:true})
-    } ;
-
-    document.querySelectorAll("i")[0].addEventListener("click", () => {
-        document.querySelector('dialog').showModal()    
-    })
-
-    document.querySelectorAll("i")[1].addEventListener("click", () => {
-        validModal()
-    })
+    <script src="assets/js/script.js"></script>
     
-    document.querySelectorAll("button")[0].addEventListener("click", () => {
-        validModal()
-    })
-    
-    document.querySelectorAll("dialog")[0].addEventListener("click", (e) => {
-        if(e.target.nodeName == "DIALOG") {
-            notValidModal()
-        }
-    })
-</script>
+  </body>
 </html>
