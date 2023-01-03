@@ -1,16 +1,14 @@
 # Notes App
 
-Simple notes app in JS 
-
 ## Description
 
-Notes app, modal are used in order to add notes, using Localstorage to save notes. this is using Unicons for the icons
+Notes app, modal are used in order to add notes, using Localstorage to save notes. It is using Unicons for the icons
 
 ## Getting Started
 
 ### Dependencies
 
-* A conextion is requir to execute the load the font. 
+* A conextion is requir to load the font as well as the icons. 
 
 ### Installing
 
