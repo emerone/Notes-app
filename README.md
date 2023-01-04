@@ -1,8 +1,6 @@
 # Notes App
 
-## Description
-
-Notes app, modal are used in order to add notes, using Localstorage to save notes. It is using Unicons for the icons
+Notes app in JS modals are used in order to add notes and edit them, using Localstorage to save notes.
 
 ## Getting Started
 
